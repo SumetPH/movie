@@ -9,7 +9,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">ตะกร้าสินค้า {{$store.state.cart.length}} ชิ้น</a>
+                    <router-link class="nav-link" to="/cart">ตะกร้าสินค้า {{$store.state.cart.length}} ชิ้น
+                    </router-link>
                 </li>
             </ul>
             <form @submit.prevent="search" class="form-inline my-2 my-lg-0">

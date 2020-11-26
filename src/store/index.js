@@ -31,14 +31,12 @@ export default new Vuex.Store({
         });
     },
     searchMovies({ commit }, movie) {
-      console.log(movie);
       axios
         .get(
           `https://api.themoviedb.org/3/search/movie?api_key=151f1c9fb18680ccc406b5ea32fd3f24&language=en-US&query=${movie}&page=1&include_adult=false
       `
         )
         .then((res) => {
-          // console.log(res.data);
           commit("setMovies", res.data.results);
         });
     },
@@ -57,9 +55,13 @@ export default new Vuex.Store({
         localStorage.setItem("cart", JSON.stringify(cart));
         return true;
       } catch (error) {
-        console.log(error);
         return false;
       }
+    },
+    deleteCart({ commit, state }, index) {
+      const cart = state.cart.filter((c, i) => i !== index);
+      commit("setCart", cart);
+      localStorage.setItem("cart", JSON.stringify(cart));
     },
   },
   modules: {},
