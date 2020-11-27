@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row my-5" v-if="movie">
             <div class="col-sm-12 col-md-6">
-                <img class="img-thumbnail" :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="">
+                <img class="img-thumbnail mb-3" :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" alt="">
             </div>
             <div class="col-sm-12 col-md-6">
                 <h2>Title : {{movie.title}}</h2>

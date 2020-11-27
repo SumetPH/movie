@@ -5,8 +5,8 @@
                 <h3>ตะกร้าสินค้า</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row mb-3">
+            <div class="col-lg-8">
                 <div class="card mb-3" v-for="(c, index) in $store.state.cart" :key="index">
                     <div class="card-body">
                         <div class="row">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="card p-3">
                     <div class="card-body">
                         <h4 class="mb-4">จำนวน : {{$store.state.cart.length}} เรื่อง</h4>
