@@ -1,24 +1,18 @@
-# movie
+# Movie
 
-## Project setup
+### Demo : https://movie-sumetph.vercel.app  
+Framework : Vue.js  
+CSS : Bootstrap  
+
+#### 1. Setup Project
 ```
 yarn install
 ```
-
-### Compiles and hot-reloads for development
+#### 2. Run Project
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
+#### 3. Open Project
 ```
-yarn build
+http://localhost:8080
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
